@@ -1,0 +1,334 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-section {
+    /* min-height: 100vh; */
+    background-color: #F99501;
+    background-image: url(/images/orange-backdrop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jhalar-img {
+    width: 280px;
+    margin-bottom: -180px;
+    margin-left: 16px;
+}
+
+.hero-section p {
+    font-size: 46px;
+    /* font-weight: 400; */
+    font-family: "Salsa", cursive;
+    color: #1E1E1E;
+    max-width: 600px;
+}
+
+.hero-section-content {
+    margin-left: 20rem;
+    /* text-align: center; */
+}
+
+.hero-section-content audio::-webkit-media-controls-panel {
+    background-color: #FBD8A4;
+}
+
+.audio-container {
+    background-color: #FBD8A4;
+    max-width: max-content;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .audio-container span {
+    font-family: "Salsa", cursive;
+}
+
+.first-deepak {
+    margin-left: 5rem;
+}
+
+
+
+/* section two */
+
+
+
+.wishings {
+    background-color: #F99501;
+    padding-block: 1em;
+    padding-inline: 1rem;
+}
+
+.lakshmi-ganesha-img {
+    max-width: 1100px;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    /* box-sizing: border-box; */
+}
+
+.horizontal-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.horizontal-line {
+    height: 2px;
+    width: 468px;
+    background-color: #FBD8A4;
+}
+
+.circle {
+    height: 8px;
+    width: 8px;
+    background-color: #FBD8A4;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.wishings h2 {
+    font-family: "Style Script", cursive;
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.white-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.white-card {
+    max-width: 600px;
+    padding: 4rem;
+    border-radius: 12px;
+    background-color: white;
+    font-family: "Salsa", cursive;
+}
+
+.white-card p {
+    font-size: 32px;
+}
+
+.little-girl {
+    width: 300px;
+    margin-left: -5rem;
+}
+
+.lakshmi-ganesha-card {
+    background-color: #FFF6E9;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 1100px;
+    /* width: 100%; */
+    display: flex;
+    margin-inline: auto;
+}
+
+.lakshmi-ganesha-card img {
+    width: 50%;
+}
+
+.thanku-text {
+    max-width: 1100px;
+    /* width: 100%; */
+    margin-inline: auto;
+    padding-block: 1rem;
+    /* padding: 4rem; */
+    padding-left: 0;
+    padding-right: 4rem;
+}
+
+.thanku-text p {
+    font-family: "Salsa", cursive;
+}
+
+.thanku-text h2 {
+    text-align: left;
+}
+
+.creator {
+    text-align: right;
+    font-size: 25px;
+    font-family: "Salsa", cursive;
+}
+
+
+
+
+@media (max-width: 910px) {
+    .second-deepak {
+        display: none;
+    }
+
+/* OR */
+
+/* @media (width <= 910px) {
+    .second-deepak {
+        display: none;
+    }
+} */
+
+    .first-deepak {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hero-section-content {
+        margin-left: 1rem;
+    }
+
+    .jhalar-img {
+        margin-bottom: 0;
+    }
+
+    .hero-section p {
+        font-size: 32px;
+    }
+
+    .white-card p {
+        font-size: 1.25rem;
+    }
+
+    .white-card {
+        padding-block: 1rem;
+        padding-left: 2rem;
+    }
+
+    .little-girl {
+        max-width: 200px;
+    }
+
+    .thanku-text h2 {
+        font-size: 3rem;
+    }
+
+    .creator {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .audio-container span,
+    #music-beats {
+        
+        display: none;
+    }
+
+    .hero-section p {
+        font-size: 24px;
+    }
+
+    .first-deepak {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .audio-container {
+        margin-right: 1rem;
+    }
+
+    .white-card p {
+        font-size: 1rem;
+    }
+
+    .creator {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 597px) {
+    .wishings h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .thanku-text h2 {
+        font-size: 1.9rem;
+    }
+}
+
+
+/* Modal background */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Hidden by default */
+.modal.hidden {
+  display: none;
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff8dc;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Salsa', cursive;
+  width: 300px;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+  color: #d97706;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #facc15;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.modal-content button {
+  background-color: #facc15;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #4b5563;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #fbbf24;
+}
+
+
+
+/* section two */
+
+
+
+
+
